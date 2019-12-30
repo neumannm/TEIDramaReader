@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role_system context="generic_roles">
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.timex">
+		<metadata>
+			<name>Timex Annotator</name>
+			<description>Timex Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.timex.ITimex</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.timex.ITimexAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.teiDramaActDetector">
+		<metadata>
+			<name>TEIDramaAct Annotator</name>
+			<description>TEIDramaAct Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IAct</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IDramaAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.teiDramaSceneDetector">
+		<metadata>
+			<name>TEIDramaScene Annotator</name>
+			<description>TEIDramaScene Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IScene</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IDramaAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.teiDramaSpeechActDetector">
+		<metadata>
+			<name>TEIDramaSpeechAct Annotator</name>
+			<description>TEIDramaSpeechAct Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.ISpeechAct</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IDramaAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.teiDramaSpeakerDetector">
+		<metadata>
+			<name>TEIDramaSpeaker Annotator</name>
+			<description>TEIDramaSpeaker Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.ISpeaker</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IDramaAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+	<role id="de.uni_koeln.spinfo.tesla.roles.teiDramaStageDirectionDetector">
+		<metadata>
+			<name>TEIDramaStageDirection Annotator</name>
+			<description>TEIDramaStageDirections Annotations</description>
+		</metadata>
+			<produces>
+				<analysis>
+					<data_object_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IStage</data_object_interface>
+					<input_adapter_interface>de.uni_koeln.spinfo.tesla.component.reader.drama.IDramaAccessAdapter</input_adapter_interface>
+				</analysis>
+			</produces>
+	</role>
+	
+</role_system>
